@@ -1,0 +1,26 @@
+
+div{
+    margin-left: 30px;
+    padding: 5px; /* Desired padding */
+    border: 2px dotted green; /* Desired border */
+    width: 200px; /* Desired width */
+    height: 200px; /* Desired height */
+    text-align: center; /* Desired text alignment */
+}
+
+#first{
+    position: relative;
+    z-index: 1;
+}
+
+#second{ 
+    z-index: 2;
+    position: relative;
+    top:-50px;
+    border-color: rgb(255, 166, 0);
+}
+
+.red{
+    color: rgb(255, 1, 1);
+    font-weight: bold;
+}

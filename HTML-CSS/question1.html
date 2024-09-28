@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Lists</title>
+</head>
+<body>
+    <!-- Heading for the exercise -->
+    <h2>Exercise on HTML5 Lists</h2>
+
+    <!-- Definition list starts -->
+    <dl>
+        <!-- First term and its description -->
+        <dt>term 1 (definition list)</dt>
+        <dd>term 1 description<br><br>
+            <!-- Ordered list inside the first term -->
+            <ol>
+                <li>ol list item 1</li>
+                <li>ol list item 2
+                    <!-- Unordered list nested inside an ordered list -->
+                    <ul>
+                        <li>ul list item 1</li>
+                        <li>ul list item 2</li>
+                    </ul>
+                    <br>
+                </li>
+            </ol>
+        </dd>
+        
+        <!-- Second term and its description -->
+        <dt>term 2 (definition list)</dt>
+        <dd>term 2 description<br><br>
+            <!-- Unordered list inside the second term -->
+            <ul>
+                <li>ul list item 3</li>
+                <li>ul list item 4
+                    <!-- Ordered list nested inside an unordered list -->
+                    <ol>
+                        <li>ol list item 3</li>
+                        <li>ol list item 4</li>
+                    </ol>
+                </li>
+                <li>ul list item 5</li>
+                <li>ul list item 6</li>
+            </ul>
+        </dd>
+    </dl>
+</body>
+</html>

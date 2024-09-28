@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Lover's Survey Form</title>
+    
+</head>
+<body style= "margin:20px">
+    <!-- Outer fieldset for the entire form -->
+    <fieldset style="border: 0;background-color: #eed1fa;">
+        
+        <!-- Table with two columns for the header and image -->
+        <table>
+            <tr>
+                <td> 
+                    <h2>Music Lover's Survey</h2>
+                </td>
+                <td>
+                    <a href = "https://t3.ftcdn.net/jpg/03/20/41/30/360_F_320413016_omSvNeOZw7UrPyMvCf95KTCKzt6WbHXG.jpg">
+                        <img src = "images/musicnote.png"
+                        alt = "Music Notes" height = "70" width = "180">
+                    </a>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Form starts here -->
+        <form>
+            <!-- Fieldset for the personal information section -->
+            <fieldset style="border: 2px solid #b82302; background-color: #feeae7; font-size: large;">
+                <legend style="color: #b82302;">Music Lover's Personal Information</legend>
+                <label for="firstName" style="color: #f76437; font-weight: bold;">First Name:</label>
+                <input type="text" id="firstName" name="firstName"><br><br>
+                
+                <label for="familyName" style="color: #f76437; font-weight: bold;">Family Name:</label>
+                <input type="text" id="familyName" name="familyName"><br><br>
+                
+                <label style="color: #f76437; font-weight: bold;">Gender:</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female" style="color: #f76437; font-weight: bold;">Female</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male" style="color: #f76437; font-weight: bold;">Male</label><br><br>
+                
+                <label for="age" style="color: #f76437; font-weight: bold;">What age category are you from?</label>
+                <select id="age" name="age">
+                    <option value="less18">Less than 18</option>
+                    <option value="18-24">18-24</option>
+                    <option value="25-34">25-34</option>
+                    <option value="35-44">35-44</option>
+                    <option value="45-54">45-54</option>
+                    <option value="55-64">55-64</option>
+                    <option value="65plus">65 or older</option>
+                </select><br><br>
+                
+                <label for="email" style="color: #f76437; font-weight: bold;">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+            </fieldset>
+
+            <br>
+
+            <!-- Fieldset for the survey questions -->
+            <fieldset style="border: 2px solid #03597e; background-color: #e0f7ff; font-size:large">
+                <legend style="color: #03597e;">Survey Questions</legend>
+                
+                <label style="color: #40aff4; font-weight: bold;">Which type of music do you listen to? (Pick as many as apply)</label><br>
+                <input type="checkbox" id="blues" name="musicTypes" value="blues">
+                <label for="blues" style="color: #40aff4; font-weight: bold;">Blues</label>
+                <input type="checkbox" id="classical" name="musicTypes" value="classical">
+                <label for="classical" style="color: #40aff4; font-weight: bold;">Classical music</label>
+                <input type="checkbox" id="electronic" name="musicTypes" value="electronic">
+                <label for="electronic" style="color: #40aff4; font-weight: bold;">Electronic Music</label>
+                <br>
+                <input type="checkbox" id="hiphop" name="musicTypes" value="hiphop">
+                <label for="hiphop" style="color: #40aff4; font-weight: bold;">Hip Hop/Rap</label>
+                <input type="checkbox" id="pop" name="musicTypes" value="pop">
+                <label for="pop" style="color: #40aff4; font-weight: bold;">Pop (Popular music)</label>
+                <input type="checkbox" id="reggae" name="musicTypes" value="reggae">
+                <label for="reggae" style="color: #40aff4; font-weight: bold;">Reggae</label>
+                <br>
+                <input type="checkbox" id="other" name="musicTypes" value="other">
+                <label for="other" style="color: #40aff4; font-weight: bold;">Other</label><br><br>
+                
+                <label style="color: #40aff4; font-weight: bold;">List your 3 favorite artists/bands:</label><br>
+                <input type="text" id="artist1" name="favoriteArtists" placeholder="Artist/Band 1">
+                <input type="text" id="artist2" name="favoriteArtists" placeholder="Artist/Band 2">
+                <input type="text" id="artist3" name="favoriteArtists" placeholder="Artist/Band 3"><br><br>
+                
+                <label style="color: #40aff4; font-weight: bold;">If you were to win tickets which show would you like 2 tickets to?</label><br>
+                <input type="radio" id="britfloyd" name="tickets" value="britfloyd">
+                <label for="britfloyd" style="color: #40aff4; font-weight: bold;">BRIT FLOYD (March 24, 2016)</label>
+                <input type="radio" id="ironmaiden" name="tickets" value="ironmaiden">
+                <label for="ironmaiden" style="color: #40aff4; font-weight: bold;">IRON MAIDEN (April 1, 2016)</label>
+                <input type="radio" id="janetjackson" name="tickets" value="janetjackson">
+                <label for="janetjackson" style="color: #40aff4; font-weight: bold;">JANET JACKSON (June 17, 2016)</label>
+                <input type="radio" id="adele" name="tickets" value="adele">
+                <label for="adele" style="color: #40aff4; font-weight: bold;">ADELE (September 30, 2016)</label><br>
+            </fieldset>
+
+            <p>Thank you for taking the time to fill out our survey!</p>
+            <!-- Submit and Reset buttons -->
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </fieldset>
+</body>
+</html>

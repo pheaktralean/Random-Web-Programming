@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pet To Give Away</title>
+        <link rel="stylesheet" href = "./base.css">
+        <link rel="stylesheet" href = "./giveawaypage.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="adoption.html">
+                    <img src="../images/strawberrilogo.png" alt="Logo" height="100" width="150">
+                </a>
+                <span class="title">Strawberri Paws Adoption</span>
+            </div>
+            
+            <div class="menu-icon-container">
+                <label for="menuToggle" class="menu-icon">&#9776; Menu</label>
+            </div>
+            <input type="checkbox" id="menuToggle" class="menu-toggle">
+            <nav id="sideMenu" class="side-menu">
+                <label for="menuToggle" class="close-menu">&#10005;</label>
+                <ul>
+                    <li><a href="adoption.html">Home</a></li>
+                    <li><a href="adoptionevent.html">Events</a></li>
+                    <li><a href="adoptionbrowse.html">Browse Available Pets</a></li>
+                    <li><a href="adoptionfind.html">Find a Dog or a Cat</a></li>
+                    <li><a href="adoptioncare.html">Dog Care</a></li>
+                    <li><a href="adoptioncatcare.html">Cat Care</a></li>
+                    <li><a href="adoptiongiveaway.html">Have a Pet to Give Away</a></li>
+                    <li><a href="adoptioncontact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <h1>Giving Away Your Cat Or Dog?</h1>
+
+        <p>
+            Please enter the information below. Your privacy will be safeguarded, and we will contact you within 7-14 business days after your application is submitted. An interview will also be scheduled to ensure the best possible outcome for your pet. Rest assured, we are committed to ensuring a smooth and secure process for giving away your pet.
+        </p>
+        
+        <form>
+            <fieldset>
+                <legend>Enter Owner's Information</legend>
+                
+                <label for="firstname" style="margin-left: 20px;">First Name: </label>
+                <input type="text" id = "firstname" name = "firstname">
+                <br><br>
+                <label for="lastname" style="margin-left: 20px;">Last Name: </label>
+                <input type="text" id = "lastname" name = "lastname">
+                <br><br>
+                <label for="address" style="margin-left: 20px;">Address: </label>
+                <input type="text" id = "address" name = "address">
+                <br><br>
+                <label for="email" style="margin-left: 20px;">Email Address: </label>
+                <input type="text" id = "email" name = "email">
+                <br><br>
+                <label for="phonenumber" style="margin-left: 20px;">Phone Number: </label>
+                <input type="text" id = "phonenumber" name = "phonenumber">
+                <br><br>
+            </fieldset>
+    
+            <br>
+            <fieldset>
+                <legend>Enter Your Pet Information</legend>
+                <label style="margin-left: 20px;">Pet Type:</label>
+                <input type="radio" id="cat" name="pettye" value="cat">
+                <label for="cat">Cat</label>
+    
+                <input type="radio" id="dog" name="pettye" value="dog">
+                <label >Dog</label>
+                <br><br>
+    
+                <label for="cattype" style="margin-left: 20px;">Cat Type:</label>
+                <input type="text" id="cattype" name="cattype">
+                <br><br>
+                <label for="dogtype" style="margin-left: 20px;">Or Dog Type:</label>
+                <input type="text" id="dogtype" name="dogtype">
+                
+                <br><br>
+                <label style="margin-left: 20px;">Pet's Age (months):</label>
+                <select id="age" name="age">
+                    <option value="Less12">Less than 12</option>
+                    <option value="12-24">13-25</option>
+                    <option value="25-34">26-38</option>
+                    <option value="35-44">39-51</option>
+                    <option value="45-54">52-64</option>
+                    <option value="55-64">65-77</option>
+                    <option value="65plus">78 or older</option>
+                </select>
+                <br><br>
+    
+                <label  style="margin-left: 20px;">Pet Gender:</label>
+                <input type="radio" id="female" name="petgender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="male" name="petgender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="no_preference" name="petgender" value="no_preference">
+                <label for="no_preference">Doesn't matter</label>
+                <br><br>
+    
+                <label for="friendliness" style="margin-left: 20px;">Friendliness Level:</label>
+                <select id="friendliness" name="friendliness">
+                    <option value="very_friendly">Very Friendly</option>
+                    <option value="friendly">Friendly</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="unfriendly">Unfriendly</option>
+                    <option value="very_unfriendly">Very Unfriendly</option>
+                </select>
+                <br><br>
+
+                <label for="friendliness" style="margin-left: 20px;">Adapability Level:</label>
+                <select id="friendliness" name="friendliness">
+                    <option value="very_friendly">Very High</option>
+                    <option value="friendly">High</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="unfriendly">Low</option>
+                    <option value="very_unfriendly">Very Low</option>
+                </select>
+                <br><br>
+    
+                <label style="margin-left: 20px;">Suitable For Small Children: </label>
+                <input type="radio" id="yes" name="yes" value ="yes">
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="no" value ="no">
+                <label for="no">No</label>
+    
+                <br><br>
+                <label for="description" class="form-label">Any description (Optional):</label><br>
+                <textarea id="description" name="description" rows="4" class="form-textarea" placeholder="Write any specific details about the pet..."></textarea>
+                <br><br>
+    
+                <label for="petimage" style="margin-left: 20px;">Upload Pet's Image:</label>
+                <input type="file" id="petimage" name="petimage" accept="image/*">
+                <br><br>
+    
+            </fieldset>
+            <br>
+        
+            <input type="submit" value="Submit" class="submit-button">
+            <input type="reset" value="Clear" class="clear-button">
+    
+
+        </form>
+
+        <p class="description">
+            Thank you for providing the details about your pet. Our team will review your submission and contact you within 7-14 business days to schedule an interview. We appreciate your trust in us to find a new loving home for your pet.
+        </p>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>About Us</h3>
+                    <p>Strawberri Paws Adoption is dedicated to finding loving homes
+                        for cats and dogs in need. Our mission is to match pets with the perfect 
+                        families and ensure they have a happy life together. 
+                    </p>
+                </div>
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="adoption.html">Home</a></li>
+                        <li><a href="adoptionevent.html">Strawberri Paws Event</a></li>
+                        <li><a href="adoptionbrowse.html">Browse Available Pets</a></li>
+                        <li><a href="adoptionfind.html">Find a Dog or a Cat</a></li>
+                        <li><a href="adoptioncare.html">Dog Care</a></li>
+                        <li><a href="adoptioncatcare.html">Cat Care</a></li>
+                        <li><a href="adoptiongiveaway.html">Have a Pet to Give Away</a></li>
+                        <li><a href="adoptioncontact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><a href="#">Shelter & Rescue Registration</a></li>
+                        <li><a href="https://maps.app.goo.gl/7SQWyzayYuwrpEpV8">Sitemap</a></li>
+                        <li><a href="termandservices.html">Terms of Service</a></li>
+                        <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class ="pp">&copy; 2024 Strawberri Paws Adoption | Designed by Sopheaktra Lean</p>
+            </div>
+        </footer>
+    </body>
+</html>

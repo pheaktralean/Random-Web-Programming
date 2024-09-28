@@ -1,0 +1,43 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.nav {
+    list-style-type: none;
+    padding: 0;
+    width: 200px;
+}
+
+.nav li {
+    text-align: center;
+    border: 1px solid rgb(252, 250, 250);
+}
+
+.nav li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    text-align: left;
+}
+
+.nav .active a {
+    background-color: rgb(29, 206, 29);
+    color: rgb(255, 255, 255);
+}
+
+.nav li:not(.active) a {
+    background-color: rgb(227, 226, 226);
+    color: rgb(78, 78, 78);
+}
+
+.nav li:not(.active) a:hover {
+    background-color: rgb(83, 83, 83);
+    color: white;
+}
